@@ -35,13 +35,13 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="ICS.Acquisition">
-      <HintPath>..\..\..\代码包\05.路灯控制控制模块开发（.net版）\ICS.Lamp\dlls\ICS.Acquisition.dll</HintPath>
+      <HintPath>..\..\..\..\Desktop\LampHub\dlls\ICS.Acquisition.dll</HintPath>
     </Reference>
     <Reference Include="ICS.Common">
-      <HintPath>..\..\..\代码包\05.路灯控制控制模块开发（.net版）\ICS.Lamp\dlls\ICS.Common.dll</HintPath>
+      <HintPath>..\..\..\..\Desktop\LampHub\dlls\ICS.Common.dll</HintPath>
     </Reference>
     <Reference Include="ICS.Models">
-      <HintPath>..\..\..\代码包\05.路灯控制控制模块开发（.net版）\ICS.Lamp\dlls\ICS.Models.dll</HintPath>
+      <HintPath>..\..\..\..\Desktop\LampHub\dlls\ICS.Models.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />

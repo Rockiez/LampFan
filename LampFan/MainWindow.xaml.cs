@@ -14,6 +14,7 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 using ICS.LampAndFan;
+
 using ICS.Acquisition;
 using ICS.Common;
 using ICS.Models;
@@ -44,7 +45,7 @@ namespace LampFan
             {
                 if (Global.ADAM4150Provider.OnOff(lampstate ? offcode : oncode))
                 {
-                    lampstate = !lampstate;
+                    lampstate = ! lampstate;
                     resetimg();
                 }
                 else
@@ -59,13 +60,13 @@ namespace LampFan
         {
             if (lampstate)
             {
-                lampimg.Source = new BitmapImage(new Uri("Resources/lamp_on", UriKind.Relative));
-                buttonimg.Source = new BitmapImage(new Uri("Resources/btn_switch_on", UriKind.Relative)); 
+                lampimg.Source = new BitmapImage(new Uri("Resources/lamp_on.png", UriKind.Relative));
+                buttonimg.Source = new BitmapImage(new Uri("Resources/btn_switch_on.png", UriKind.Relative)); 
             }
             else
             {
-                lampimg.Source = new BitmapImage(new Uri("Resources/lamp_off", UriKind.Relative));
-                buttonimg.Source = new BitmapImage(new Uri("Resources/btn_switch_off", UriKind.Relative)); 
+                lampimg.Source = new BitmapImage(new Uri("Resources/lamp_off.png", UriKind.Relative));
+                buttonimg.Source = new BitmapImage(new Uri("Resources/btn_switch_off.png", UriKind.Relative)); 
             }
         }
     }
@@ -106,7 +107,6 @@ namespace LampFan
                 {
                     MessageBox.Show(errormess);
                 }
-
             }
         }
         private void onbutton1(object sender, RoutedEventArgs e)
